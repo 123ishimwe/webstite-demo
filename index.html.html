@@ -1,0 +1,154 @@
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Q Meddy Construction Materials offers a variety of construction products including Twiga and Cimerwa cement at affordable prices.">
+    <meta name="keywords" content="cement, construction materials, twiga, cimerwa, building supplies">
+    <meta name="author" content="Q Meddy">
+    <meta property="og:title" content="Q Meddy Construction Materials">
+    <meta property="og:description" content="Shop high-quality Twiga and Cimerwa cement at affordable prices for your construction needs.">
+    <meta property="og:image" content="kigali city.jpeg">
+    <meta property="og:url" content="https://yourwebsite.com">
+    <meta property="og:type" content="website">
+    <title>Q MEDDY STORE</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- Optional: favicon link -->
+    <!-- <link rel="icon" href="favicon.ico" type="image/x-icon"> -->
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>Q Meddy Construction Materials</h1>
+            <nav aria-label="Main navigation">
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="web.html">Products</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    
+    <section class="hero">
+        <div class="hero-overlay">
+            <h2>High-Quality Construction Materials</h2>
+            <p>Building your future with the best materials - Twiga and Cimerwa cement available at affordable prices.</p>
+            <a href="web.html" class="cta-button">Shop Now</a>
+        </div>
+        <div class="hero-slideshow">
+            <img src="kigali city.jpeg" alt="Twiga Cement" class="slide fade">
+            <img src="kgl.jpg" alt="Cimerwa Cement" class="slide fade">
+            <img src="kiali city 3.jpg" alt="Construction with cement" class="slide fade">
+        </div>
+    </section>
+
+    <!-- Product Gallery Section -->
+    <section class="product-gallery">
+        <h2>Our Products</h2>
+        <div class="gallery">
+            <div class="gallery-item">
+                <img src="cement.jpg" alt="Twiga Cement" class="product-img">
+            </div>
+            <div class="gallery-item">
+                <img src="twiga32.5.PNG" alt="Cimerwa Cement" class="product-img">
+            </div>
+            <div class="gallery-item">
+                <img src="materials.webp" alt="Construction Materials" class="product-img">
+            </div>
+        </div>
+    </section>
+    <!-- Transport Service Section -->
+<section class="transport-service">
+    <div class="container">
+        <h2>Free Truck Delivery with Bulk Orders</h2>
+        <p>When you purchase a full truckload of cement, we offer FREE delivery to your construction site! No need to worry about transport – we handle everything so you can focus on building your project with quality materials.</p>
+        
+        <div class="truck-image">
+            <img src="truck 3.jpg" alt="Delivery Truck carrying cement" class="truck-img">
+        </div>
+        
+        <a href="contact.html" class="cta-button">Contact Us for More Details</a>
+    </div>
+</section>
+
+    
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Q Meddy Construction Materials. All Rights Reserved.</p>
+        </div>
+        
+            <div class="container">
+                <div class="footer-content">
+                    <div class="footer-info">
+                        <h3>Q Meddy Construction Materials</h3>
+                        <p>Your trusted source for Twiga and Cimerwa cement and other high-quality construction materials.</p>
+                        <p>&copy; 2024 Q Meddy Construction Materials. All Rights Reserved.</p>
+                    </div>
+                    
+                    <div class="footer-contact">
+                        <h4>Contact Us</h4>
+                        <ul>
+                            <li><strong>Phone:</strong> +250 788493845</li>
+                            <li><strong>Email:</strong> <a href="mailto:info@qmeddy.com">info@qmeddy.com</a></li>
+                            <li><strong>Address:</strong> Kigali, Rwanda</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="footer-links">
+                        <h4>Quick Links</h4>
+                        <ul>
+                            <li><a href="#">Home</a></li>
+                            <li><a href="web.html">Products</a></li>
+                            <li><a href="contact.html">Contact</a></li>
+                            <li><a href="#">About Us</a></li>
+                            <li><a href="#">FAQ</a></li>
+                        </ul>
+                    </div>
+                    
+                    <div class="footer-social">
+                        <h4>Follow Us</h4>
+                        <ul>
+                            <li><a href="https://facebook.com/qmeddy" target="_blank">Facebook</a></li>
+                            <li><a href="https://twitter.com/qmeddy" target="_blank">Twitter</a></li>
+                            <li><a href="https://instagram.com/qmeddy" target="_blank">Instagram</a></li>
+                            <li><a href="https://linkedin.com/company/qmeddy" target="_blank">LinkedIn</a></li>
+                        </ul>
+                    </div>
+                </div>
+        
+                <!-- Optional: Newsletter Signup -->
+                <div class="footer-newsletter">
+                    <h4>Subscribe to Our Newsletter</h4>
+                    <form action="#" method="post">
+                        <input type="email" name="email" placeholder="Enter your email" required>
+                        <button type="submit">Subscribe</button>
+                    </form>
+                </div>
+            </div>
+       
+</section>
+
+        
+    </footer>
+
+    <script>
+        // Slideshow functionality
+        let slideIndex = 0;
+
+        function showSlides() {
+            let slides = document.querySelectorAll('.hero-slideshow .slide');
+            slides.forEach((slide, index) => {
+                slide.style.display = 'none';
+            });
+
+            slideIndex++;
+            if (slideIndex > slides.length) {slideIndex = 1}    
+            slides[slideIndex-1].style.display = 'block';  
+            setTimeout(showSlides, 3000); // Change image every 3 seconds
+        }
+
+        showSlides(); // Initialize slideshow
+    </script>
+</body>
+</html>
